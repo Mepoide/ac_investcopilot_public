@@ -1,0 +1,55 @@
+# Secrets (never commit)
+.env
+*.env
+!*.env.example
+# Service Account keys (credenciales GCP, nunca versionar)
+*-sa-key.json
+*serviceaccount*.json
+*service-account*.json
+
+# Windows download metadata
+*Zone.Identifier
+
+# Large source zip (keep extracted folder instead)
+InvestCopilot_AI_Summit.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# Estado en vivo del orquestador (progreso de la ejecución actual, no histórico)
+run_*_progress.json
+# Log del subproceso del orquestador lanzado desde la web (regenerable)
+08_agents_mcp/orchestrator/run_*.log
+
+# Outputs de ejecuciones (TEST y DEC_*) — logs de decisiones, no código
+# Los outputs se regeneran bajo demanda; no tiene sentido versionarlos
+02_research/outputs_research/TEST_*
+02_research/outputs_research/DEC_*
+03_macro_houseview/outputs_macro/TEST_*
+03_macro_houseview/outputs_macro/DEC_*
+04_portfolio_riesgo/outputs_riesgo/TEST_*
+04_portfolio_riesgo/outputs_riesgo/DEC_*
+05_mandatos_asset_allocation/outputs_mandatos/TEST_*
+05_mandatos_asset_allocation/outputs_mandatos/DEC_*
+06_sintesis_comite/TEST_*
+06_sintesis_comite/DEC_*
+08_agents_mcp/orchestrator/run_TEST_*
+08_agents_mcp/orchestrator/run_DEC_*
+01_decision_input/decisiones/TEST_*
+01_decision_input/decisiones/DEC_*
+
+# Registro de costes diarios (datos locales, no histórico versionable)
+08_agents_mcp/cost_log.json
+
+# VS Code
+.vscode/
+
+# Versión pública: nunca versionar datos reales de carteras, precios, benchmarks ni research
+data/
+*.pkl
+*.xls
+*.xlsx
+*.pdf
+cartera_real_*
+**/outputs_*/

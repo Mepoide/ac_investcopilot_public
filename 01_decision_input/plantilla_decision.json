@@ -1,0 +1,82 @@
+{
+  "id_decision": "DECISION_001",
+  "fecha_analisis": "2026-06-29",
+  "nombre_decision": "Evaluar incremento de exposición a tecnología estadounidense",
+  "descripcion_corta": "Analizar si tiene sentido incrementar en 3% la exposición a tecnología estadounidense en una cartera multiactivo.",
+  "tipo_decision": "incremento_exposicion",
+  "estado": "hipotesis_de_analisis",
+
+  "hipotesis": {
+    "accion_propuesta": "Incrementar exposición",
+    "activo_o_bloque": "Tecnología estadounidense",
+    "clase_activo": "Renta variable",
+    "region": "Estados Unidos",
+    "sector": "Tecnología",
+    "importe_o_peso_propuesto": "3%",
+    "horizonte_temporal": "Medio plazo",
+    "objetivo_de_la_decision": "Evaluar si la hipótesis mejora el perfil esperado de la cartera sin generar riesgos, concentraciones o tensiones de mandato no deseadas."
+  },
+
+  "contexto_inicial": {
+    "motivacion": "La tecnología estadounidense mantiene un papel relevante en el crecimiento de beneficios, innovación e inteligencia artificial, aunque puede presentar riesgos de valoración, concentración y sensibilidad a tipos.",
+    "pregunta_principal": "¿Tiene sentido incrementar en 3% la exposición a tecnología estadounidense en la cartera?",
+    "preguntas_secundarias": [
+      "¿La hipótesis está alineada con el House View?",
+      "¿Qué argumentos de inversión apoyan o cuestionan la decisión?",
+      "¿Qué impacto tendría sobre el riesgo total de la cartera?",
+      "¿Aumenta de forma relevante la concentración sectorial o regional?",
+      "¿Cumple los mandatos y límites disponibles?",
+      "¿Qué información falta antes de tomar una decisión?"
+    ]
+  },
+
+  "cartera_referencia": {
+    "nombre_cartera": "Cartera multiactivo ejemplo",
+    "divisa_base": "EUR",
+    "perfil_riesgo": "Moderado",
+    "benchmark": "Benchmark multiactivo interno",
+    "nota": "La cartera puede ser real, simplificada o simulada. Debe indicarse expresamente en los análisis."
+  },
+
+  "datos_disponibles": {
+    "cartera_actual": "pendiente",
+    "series_historicas": "pendiente",
+    "benchmarks": "pendiente",
+    "house_view": "pendiente",
+    "mandatos": "pendiente",
+    "limites": "pendiente",
+    "research": "pendiente",
+    "metricas_riesgo_actuales": "pendiente"
+  },
+
+  "agentes_a_activar": {
+    "agente_research": true,
+    "agente_macro_house_view": true,
+    "agente_riesgo": true,
+    "agente_mandatos_asset_allocation": true,
+    "agente_sintesis_comite_virtual": true
+  },
+
+  "instrucciones_para_agentes": {
+    "regla_general": "Analizar la hipótesis como apoyo al proceso de decisión, sin emitir recomendaciones automáticas ni instrucciones de ejecución.",
+    "usar_datos_simulados_si_es_necesario": true,
+    "advertir_si_datos_simulados": true,
+    "identificar_informacion_faltante": true,
+    "distinguir_hechos_supuestos_estimaciones": true,
+    "mantener_supervision_humana": true
+  },
+
+  "salida_esperada": {
+    "formato": "markdown",
+    "incluir_resumen": true,
+    "incluir_analisis_por_agente": true,
+    "incluir_riesgos": true,
+    "incluir_alertas": true,
+    "incluir_informacion_faltante": true,
+    "incluir_discrepancias_entre_agentes": true,
+    "incluir_conclusion_prudente": true,
+    "evitar_recomendacion_automatica": true
+  },
+
+  "advertencia": "Este archivo define una hipótesis de análisis para el prototipo InvestCopilot. No constituye una recomendación de inversión ni una instrucción de ejecución. La decisión final debe ser revisada por el gestor o por el órgano correspondiente."
+}

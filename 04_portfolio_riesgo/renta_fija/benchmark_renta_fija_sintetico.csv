@@ -1,0 +1,5 @@
+categoria,peso_pct,duracion_modificada,oas_bps,rating_medio
+Government,30.0,7.9,0,AAA
+Investment Grade Corporate (A/AA),35.0,5.6,55,A+
+Investment Grade Corporate (BBB),25.0,5.2,110,BBB
+High Yield (BB y menor),10.0,3.8,310,BB
